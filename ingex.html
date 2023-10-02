@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h3> Test ish </h3>
+    <p id="java"> </p>
+    <script>
+         let studentFirstName = "Brandon";
+         let studentLastName = "N";
+         let grade1 = 53;
+         let grade2 = 96;
+         let grade3 = 65;
+         let grade4 = 74; 
+         let passingGrade = 80;    
+         let averagescore = (grade1+grade2+grade3+grade4)/4
+         document.getElementById("java").innerHTML = "The average grade is: " + averagescore;
+    </script>
+    <p id="javes"></p>
+    <script>
+        let StudentFirstName = "Brandon";
+        let StudentLastName = "Newman";
+        document.getElementById("javes").innerHTML = studentFirstName + " " + StudentLastName;
+    </script>
+    <script>
+        console.log(studentFirstName+ " " + StudentLastName+ " " + "has an average grade of"+ " " + averagescore) 
+    </script>
+    <p id="didntpass"></p>
+    <script>
+    if (averagescore >= 80) {
+    x = "passed"
+    }
+    else if (averagescore < 80) {
+    x = "didnt pass" 
+    }
+    document.getElementById("didntpass").innerHTML = "The student: " + x;
+    </script>
+</body>
