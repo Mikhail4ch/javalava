@@ -6,7 +6,7 @@
     <title>Homework</title>
 </head>
 <body>
-    <h3> Test ish </h3>
+    <h3> The first homework  </h3>
     <p id="java"> </p>
     <script>
          let studentFirstName = "Brandon";
@@ -15,7 +15,7 @@
          let grade2 = 96;
          let grade3 = 65;
          let grade4 = 74; 
-         let passingGrade = 80;    
+         let passingGrade = 80;  
          let averagescore = (grade1+grade2+grade3+grade4)/4
          document.getElementById("java").innerHTML = "The average grade is: " + averagescore;
     </script>
@@ -30,12 +30,49 @@
     </script>
     <p id="didntpass"></p>
     <script>
-    if (averagescore >= 80) {
-    x = "passed"
-    }
-    else if (averagescore < 80) {
-    x = "didnt pass" 
-    }
-    document.getElementById("didntpass").innerHTML = "The student: " + x;
+         if (averagescore >= 80) {
+         x = "passed"
+         }
+         else if (averagescore < 80) {
+         x = "didnt pass" 
+         }
+         document.getElementById("didntpass").innerHTML = "The student: " + x;
+    </script>
+    <hr>
+    <h3>The second homework</h3>
+    <p id="division"> Non-divisble </p>
+    <script>
+        let q1test = 15;  
+          if (q1test % 3 == 0 && q1test % 5 == 0 ) {
+            q1test = "divisible by both"
+            document.getElementById("division").innerHTML = "The number is: " + q1test
+          }
+          else if (q1test % 3 == 0) {
+            q1test = "divisible by 3"
+            document.getElementById("division").innerHTML = "The number is: " + q1test
+          }
+          else if (q1test % 5 == 0) {
+            q1test = "divisible by 5"
+            document.getElementById("division").innerHTML = "The number is: " + q1test
+          }
+          
+    </script>
+    <p id="leap"> This isn't a leap year </p>
+    <script>
+         let year = 1999;
+           if (year % 4 == 0) {
+            year = "a leap year"
+            document.getElementById("leap").innerHTML = "This year is: " + year
+           }
+    </script>
+    <p> All the numbers from 0 to 100 divisible by 3 or 4:</p>
+    <p id="loop"> </p>
+    <script>
+         let numbers = "";
+         for (let i = 1; i < 101; i++) {
+            if (i % 3 == 0 || i % 4 == 0)
+            numbers += + i + "<br>"
+            document.getElementById("loop").innerHTML = numbers
+         }
     </script>
 </body>
