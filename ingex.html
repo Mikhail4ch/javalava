@@ -71,8 +71,34 @@
          let numbers = "";
          for (let i = 1; i < 101; i++) {
             if (i % 3 == 0 || i % 4 == 0)
-            numbers += + i + "<br>"
+            numbers += + i + " " 
             document.getElementById("loop").innerHTML = numbers
          }
+    </script>
+    <hr>
+    <h3>The third one</h3>
+    <p id="array"> </p>
+    <script>
+           const grades = [56,87,99,40];
+           grades.push(68);
+           grades.shift();
+           grades[2]=60;
+           let sum = grades.reduce(myFunction);
+           function myFunction(total, value) {
+           return total + value;
+           }
+           document.getElementById("array").innerHTML = grades + "<br>" +  " " + "The sum is:" + " " + sum;
+           
+    </script>
+    <p id="objects"> </p>
+    <script>
+           const car = {Name: "the car",
+          Brand: "BMW", Year:2008, Wheels:4,EnvFriendly:false};
+            let txt = " ";
+            for (item in car) {
+              let salary = " " + " " + " - " + " " + item;
+              txt += `${salary} => ${car[item]}`; 
+            }
+           document.getElementById("objects").innerHTML = txt;
     </script>
 </body>
