@@ -96,7 +96,7 @@
           Brand: "BMW", Year:2008, Wheels:4,EnvFriendly:false};
             let txt = " ";
             for (item in car) {
-              let salary = " " + " " + " - " + " " + item;
+              let salary = " " + " " + " <br> " + " " + item;
               txt += `${salary} => ${car[item]}`; 
             }
            document.getElementById("objects").innerHTML = txt;
