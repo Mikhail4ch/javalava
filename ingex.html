@@ -24,9 +24,7 @@
         let StudentFirstName = "Brandon";
         let StudentLastName = "Newman";
         document.getElementById("javes").innerHTML = studentFirstName + " " + StudentLastName;
-    </script>
-    <script>
-        console.log(studentFirstName+ " " + StudentLastName+ " " + "has an average grade of"+ " " + averagescore) 
+        document.getElementById("javes").innerHTML = studentFirstName+ " " + StudentLastName+ " " + "has an average grade of"+ " " + averagescore;
     </script>
     <p id="didntpass"></p>
     <script>
@@ -101,4 +99,65 @@
             }
            document.getElementById("objects").innerHTML = txt;
     </script>
+    <h3> The fourth one (in console)</h3>
+    <script>
+      console.log("Homework!")
+      function fizzBuzz (i)
+{
+    let result = " ";
+    if (i%3==0 && i%5==0) { 
+  result = 'FizzBuzz'
+    }
+else if (i%5==0) {
+      result = 'Buzz'
+        }
+else if (i%3==0) {
+  result = 'Fizz'
+    }
+else {
+  result = 'Pop'
+  }
+{
+    return result }
+}
+console.log (fizzBuzz(999))
+console.log (fizzBuzz(49))
+console.log (fizzBuzz(120))
+console.log (fizzBuzz(55))
+    </script>
+    <script>
+      function Sum () {
+        let resulT = 0;
+        for (const number of prices) {
+          resulT = resulT + number
+        }
+        return {resulT}
+      }
+      const prices = [12.99, 17.75, 88.12, 111.11, 77.09, 53.45]
+      console.log(Sum(prices))
+      function average (d,b) {
+        Average = d / b
+        return {Average}
+      }
+      console.log(average(360.51,prices.length))
+      function celToFah(C) {
+        return (9/5) * C + 32 + " " + "Fahrenheit";
+      }
+    console.log(celToFah(37.5))
+    console.log(celToFah(-40))
+    console.log(celToFah(0))
+    console.log(celToFah(100))
+     function celToKel (C) {
+      return C + 273 + " " + "Kelvin"
+     }
+    console.log(celToKel(173.13))
+    console.log(celToKel(-13))
+    function pow(k,l) {
+    return k**l  + " " + " " + " " + "There you are!"
+    }
+    console.log(pow(2,3))
+
+
+    </script>
+
 </body>
